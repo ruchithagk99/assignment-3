@@ -1,0 +1,5 @@
+CHALLENGES FACED
+----------------
+1.Time constraint-lesser time compared to previous assignments
+2.linux commands-most of the sources provide solutions to  error in existing codes,and lesser information on how to construct them
+ps:sorry for submitting a generalized java code

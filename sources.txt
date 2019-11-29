@@ -1,0 +1,5 @@
+SOURCES
+-------
+https://serverfault.com/questions/485400/what-exactly-do-limit-1-s-and-limit-burst-mean-in-iptables-rules
+https://www.geeksforgeeks.org/leaky-bucket-algorithm/
+https://askubuntu.com/questions/978437/ping-for-60-seconds

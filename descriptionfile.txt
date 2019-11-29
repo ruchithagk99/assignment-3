@@ -1,0 +1,50 @@
+Command to ping for 1minute,stop for 30 seconds and ping again for 1 minute
+------------------------------------------------------------------------------
+@ECHO OFF
+
+:LOOPSTART
+
+time /T
+ping google.com  -t60 >> filename.txt
+sleep  30
+
+GOTO LOOPSTART
+
+computation of X and Y
+----------------------
+D=54
+X=54+10=64(avg 1per second is the output rate)
+Y=54/2=27(burst rate)
+----------------------
+Leaky bucket can be used,as we can specify the input rate and output rate as well as the burst size 
+
+Import java.util.Scanner;
+public class LeakyBucket {
+Public static void main(String[] args) throws InterruptionException {
+Int n, incoming=1, outgoing=1, store=0, bucketsize=27;
+Scanner scan = new Scanner(system.in);
+System.out.println( "number of inputs" );
+n = scan.nextInt();
+while(n!=0)
+{
+ System.out.println(“Incoming size is “ + incoming);
+ if(incoming <= (bucketsize-store))
+ {
+  store+= incoming;
+  System.out.println(“Bucket buffer size is “ + store +” out of “ +bucketzise);
+ }
+ else
+ {
+ System.out.println(“Packet loss : “ + (incoming-(bucketsize-size)));
+ store=bucketsize;
+ System.out.println(“Bucket buffer size is “ + store +” out of “ +bucketzise);
+ }
+ store-=outgoing;
+ System.out.println(“After outgoing: “ + store + “ packets left out of “+ bucketsize + “ in buffer);
+ n—;
+ Thread.sleep(3000);
+}
+scan.close();
+}
+}
+
